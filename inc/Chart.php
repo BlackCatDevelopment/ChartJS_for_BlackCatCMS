@@ -175,7 +175,8 @@ if (!class_exists('lib_chartjs_Chart'))
                 'maxval'      => $maxval,
                 'chartdata'   => implode( ",\n", $chartdata )
             ));
-            $parser->resetPath();
+            if(method_exists($parser,'resetPath'))
+                $parser->resetPath();
             return $output;
 
         }   // end function getPiechart()
@@ -266,7 +267,8 @@ if (!class_exists('lib_chartjs_Chart'))
                 'maxval'      => $maxval,
                 'color_scale' => $options['color_scale'],
             ));
-            $parser->resetPath();
+            if(method_exists($parser,'resetPath'))
+                $parser->resetPath();
             return $output;
 
         }   // end function getLinechart()

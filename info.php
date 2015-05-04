@@ -42,7 +42,7 @@ if (defined('CAT_PATH')) {
 $module_directory     = 'lib_chartjs';
 $module_name          = 'ChartJS for BlackCat CMS';
 $module_function      = 'library';
-$module_version       = '0.1';
+$module_version       = '0.2';
 $module_platform      = '1.x';
 $module_author        = 'ChartJS - Nick Downie; this module - Black Cat Development';
 $module_license       = 'GNU General Public License';
